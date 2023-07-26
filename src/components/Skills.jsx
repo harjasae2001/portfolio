@@ -19,40 +19,64 @@ const Skills = () => {
           <p className="py-4">These are the technologies I've worked with</p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={HTML} alt="HTML icon" className="w-20 mx-auto" />
+          <div className="hover:scale-110 duration-500">
+            <img src={HTML} alt="HTML icon" className="w-20 mx-auto " />
             <p className="my-4">HTML</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={CSS} alt="CSS icon" className="w-20 mx-auto" />
+          <div className="hover:scale-110 duration-500">
+            <img
+              src={CSS}
+              alt="CSS icon"
+              className="w-20 mx-auto hover:scale-110 duration-500"
+            />
             <p className="my-4">CSS</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          <div className="hover:scale-110 duration-500">
             <img
               src={JavaScript}
               alt="JavaScript icon"
-              className="w-20 mx-auto"
+              className="w-20 mx-auto hover:scale-110 duration-500"
             />
             <p className="my-4">JavaScript</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={ReactImg} alt="React icon" className="w-20 mx-auto" />
+          <div className=" hover:scale-110 duration-500">
+            <img
+              src={ReactImg}
+              alt="React icon"
+              className="w-20 mx-auto hover:scale-110 duration-500"
+            />
             <p className="my-4">React</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={Tailwind} alt="Tailwind icon" className="w-20 mx-auto" />
+          <div className="hover:scale-110 duration-500 ">
+            <img
+              src={Tailwind}
+              alt="Tailwind icon"
+              className="w-20 mx-auto hover:scale-110 duration-500"
+            />
             <p className="my-4">Tailwind CSS</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={Node} alt="Node.JS icon" className="w-20 mx-auto" />
+          <div className=" hover:scale-110 duration-500">
+            <img
+              src={Node}
+              alt="Node.JS icon"
+              className="w-20 mx-auto hover:scale-110 duration-500"
+            />
             <p className="my-4">NodeJS</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={Mongo} alt="MongoDB icon" className="w-20 mx-auto" />
+          <div className="hover:scale-110 duration-500">
+            <img
+              src={Mongo}
+              alt="MongoDB icon"
+              className="w-20 mx-auto hover:scale-110 duration-500"
+            />
             <p className="my-4">MongoDB</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={FireBase} alt="FireBase icon" className="w-20 mx-auto" />
+          <div className="hover:scale-110 duration-500">
+            <img
+              src={FireBase}
+              alt="FireBase icon"
+              className="w-20 mx-auto hover:scale-110 duration-500"
+            />
             <p className="my-4">FireBase</p>
           </div>
         </div>
