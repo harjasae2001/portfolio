@@ -1,23 +1,29 @@
 import React from "react";
 
-const Footer = () => {
+const footer = () => {
   const date = new Date().getFullYear;
   console.log(date);
   return (
-    <footer className="w-[full] bg-[#0a192f] text-gray-300">
-      <div className=" flex items-start justify-start">
-        <p>&copy; Copyrigh Harjas Singh {new Date().getFullYear()}</p>
+    <footer className="w-[full] bg-[#111] text-gray-300 p-10 flex flex-col items-center justify-center">
+      <div className=" flex ">
+        <p>&copy; Copyright Harjas Singh {new Date().getFullYear()}</p>
       </div>
 
-      <div className="">
-        <div>
-          <p>Connect With Us</p>
+      <div className="flex flex-col ">
+        <div className="p-2">
+          <p>Connect With Me</p>
         </div>
         <div className="">
-          <ul className="">
-            <li>
-              <a href="/">
+          <ul className="flex">
+            <li className="pr-3 pl-3">
+              <a
+                href="https://www.instagram.com/harjasae2001/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <svg
+                  height="30"
+                  width="30"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 16 16"
                   id="instagram"
@@ -70,9 +76,15 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="/">
+            <li className="px-3">
+              <a
+                href="https://www.facebook.com/profile.php?id=100063952266000"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <svg
+                  width="30"
+                  height="30"
                   xmlns="http://www.w3.org/2000/svg"
                   data-name="Ebene 1"
                   viewBox="0 0 1024 1024"
@@ -89,12 +101,16 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="/">
+            <li className="px-3">
+              <a
+                href="https://twitter.com/HarjasS33433485"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
+                  width="30"
+                  height="30"
                   viewBox="126.444 2.281 589 589"
                   id="twitter"
                 >
@@ -111,9 +127,6 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="/"></a>
-            </li>
           </ul>
         </div>
       </div>
@@ -121,4 +134,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default footer;

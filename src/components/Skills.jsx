@@ -3,11 +3,10 @@ import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
-import Node from "../assets/node.png";
 import FireBase from "../assets/firebase.png";
-// import GitHub from "../assets/github.png";
+import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
-import Mongo from "../assets/mongo.png";
+// import Mongo from "../assets/mongo.png";
 const Skills = () => {
   return (
     <div name="skills" className="bg-[#0a192f] text-gray-300 w-full h-screen">
@@ -57,20 +56,20 @@ const Skills = () => {
           </div>
           <div className=" hover:scale-110 duration-500">
             <img
-              src={Node}
+              src={GitHub}
               alt="Node.JS icon"
               className="w-20 mx-auto hover:scale-110 duration-500"
             />
-            <p className="my-4">NodeJS</p>
+            <p className="my-4">Github</p>
           </div>
-          <div className="hover:scale-110 duration-500">
+          {/* <div className="hover:scale-110 duration-500">
             <img
               src={Mongo}
               alt="MongoDB icon"
               className="w-20 mx-auto hover:scale-110 duration-500"
             />
             <p className="my-4">MongoDB</p>
-          </div>
+          </div> */}
           <div className="hover:scale-110 duration-500">
             <img
               src={FireBase}

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
 import logo from "../assets/my_logo-removebg-preview.png";
 import { Link } from "react-scroll";
+// import { Document, pdfjs, Page } from "react-pdf";
+// import resumePdf from "../assets/resume.pdf";
 const Navbar = () => {
   const [show, setShow] = useState(false);
 
@@ -12,14 +14,14 @@ const Navbar = () => {
   };
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
+      <Link to="home" smooth={true} duration={500}>
         <img
           src={logo}
           alt="Logo"
           style={{ width: "50px" }}
           className="rounded-full"
         />
-      </div>
+      </Link>
       {/* menu */}
       <ul className="hidden md:flex">
         <li className=" hover:text-pink-600">
@@ -77,7 +79,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl  hover:text-pink-600">
-          {" "}
           <Link onClick={navClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
@@ -114,14 +115,16 @@ const Navbar = () => {
               EMail <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a
+          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+            <Document
+              file={resumePdf}
+              onLoadError={console.error}
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
             >
+              <Page pageIndex={0} />
               Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
+            </Document>
+          </li> */}
         </ul>
       </div>
     </div>

@@ -1,31 +1,20 @@
 import React from "react";
-import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Switch } from "@headlessui/react";
+// import { useState } from "react";
+// import { ChevronDownIcon } from "@heroicons/react/20/solid";
+// import { Switch } from "@headlessui/react";
 import contactIllustrate from "../assets/undraw_contact_us.svg";
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(" ");
+// }
 
 // export default function Example() {
 const Contact = () => {
-  const [agreed, setAgreed] = useState(false);
+  // const [agreed, setAgreed] = useState(false);
   return (
-    // <div
-    //   name="contact"
-    //   className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
-    // >
-    //   <form
-    // action="https://getform.io/f/cfad92fd-eac6-4bf7-8f82-f996a862e03f"
-    //     method="POST"
-    //     className="flex flex-col max-w-[600px] w-full"
-    //   >
-    <div className=" bg-[#0a192f] flex items-center justify-evenly px-6 py-24 sm:py-32 lg:px-8">
-      <img
-        src={contactIllustrate}
-        alt="contact-us-illustrate"
-        className="w-[50%] ml-10"
-      />
+    <div className=" bg-[#0a192f] flex items-center justify-center px-6 py-24 sm:py-32 lg:px-8">
+      <div className="w-[50%] p-6">
+        <img src={contactIllustrate} alt="contact-us-illustration" />
+      </div>
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -118,32 +107,14 @@ const Contact = () => {
               >
                 Phone number
               </label>
-              <div className="relative mt-2.5">
-                <div className="absolute inset-y-0 left-0 flex items-center">
-                  <label htmlFor="country" className="sr-only">
-                    Country
-                  </label>
-                  <select
-                    id="country"
-                    name="country"
-                    className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-                  >
-                    <option>US</option>
-                    <option>CA</option>
-                    <option>EU</option>
-                  </select>
-                  <ChevronDownIcon
-                    className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </div>
+              <div className="mt-2.5">
                 <input
                   type="tel"
                   name="phone-number"
                   id="phone-number"
                   required
                   autoComplete="tel"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2  text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -164,7 +135,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+            {/* <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
               <div className="flex h-6 items-center">
                 <Switch
                   checked={agreed}
@@ -191,46 +162,16 @@ const Contact = () => {
                 </a>
                 .
               </Switch.Label>
-            </Switch.Group>
+            </Switch.Group> */}
           </div>
           <div className="mt-10">
             <button
               type="submit"
               className="block w-full rounded-md bg-pink-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-pink-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600"
             >
-              Let's talk
+              Let's Collaborate
             </button>
           </div>
-          {/* <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
-            Contact
-          </p>
-          <p className="text-gray-300 py-4">
-            {"//"}
-            Submit the form below or shoot me an email="myemail@gmail.com"
-          </p>
-        </div>
-        <input
-          className="bg-[#ccd6f6] p-2"
-          type="text"
-          placeholder="Name"
-          name="name"
-        />
-        <input
-          className="bg-[#ccd6f6] my-4 p-2"
-          type="email"
-          placeholder="Email"
-          name="email"
-        />
-        <textarea
-          className="bg-[#ccd6f6] p-2"
-          type="message"
-          placeholder="Message"
-          rows="10"
-        />
-        <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
-          Let's Collaborate.
-        </button> */}
         </form>
       </div>
     </div>
